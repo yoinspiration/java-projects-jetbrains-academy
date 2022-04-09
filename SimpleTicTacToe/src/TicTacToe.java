@@ -5,6 +5,7 @@ class TicTacToe {
     private char[] cells;
     private Player playerX = new Player('X');
     private Player playerO = new Player('O');
+    
     private final int LENGTH = 3;
     private final int COUNT = LENGTH * LENGTH;
 
