@@ -8,6 +8,5 @@ class Main {
 
         game.start();
 
-//        game.printGameState();
     }
 }
