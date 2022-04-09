@@ -21,7 +21,7 @@ class TicTacToe {
         for (int i = 0; i < LENGTH; i++) {
             System.out.print("|");
             for (int j = 0; j < LENGTH; j++) {
-                System.out.print(" " + cells[i*LENGTH+j]);
+                System.out.print(" " + cells[i * LENGTH + j]);
             }
             System.out.println(" |");
         }
@@ -77,8 +77,8 @@ class TicTacToe {
             String[] coordinates = input.split(" ");
 
             try {
-                int row=Integer.parseInt(coordinates[0])-1;
-                int col=Integer.parseInt(coordinates[1])-1;
+                int row=Integer.parseInt(coordinates[0]) - 1;
+                int col=Integer.parseInt(coordinates[1]) - 1;
 
                 if (row < 0 || row > 2 || col < 0 || col > 2) {
                     System.out.println("Coordinates should be from 1 to 3!");
