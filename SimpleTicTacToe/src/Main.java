@@ -9,6 +9,8 @@ class Main {
         char[] cells = in.nextLine().toCharArray();
         TicTacToe game = new TicTacToe(cells);
 
-        game.printBoard();
+        game.start();
+
+//        game.printGameState();
     }
 }
