@@ -30,11 +30,12 @@ class TicTacToe {
 
     protected void start() {
 
-        System.out.println("---------\n" +
-                "|       |\n" +
-                "|       |\n" +
-                "|       |\n" +
-                "---------");
+        System.out.println("""
+                ---------
+                |       |
+                |       |
+                |       |
+                ---------""");
 
         int turn = 0;
         while (true) {
