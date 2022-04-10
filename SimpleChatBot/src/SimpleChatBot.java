@@ -6,8 +6,10 @@ class SimpleChatBot {
     private String birthYear = "2015";
 
     protected void introduceMyself() {
-        System.out.printf("Hello! My name is %s.\n" +
-                "I was created in %s.\n", botName, birthYear);
+        System.out.printf("""
+                Hello! My name is %s.
+                I was created in %s.
+                """, botName, birthYear);
     }
 
     private Scanner in = new Scanner(System.in);
@@ -19,8 +21,10 @@ class SimpleChatBot {
 
     protected void guessAge() {
 
-        System.out.println("Let me guess your age.\n" +
-                "Enter remainders of dividing your age by 3, 5 and 7.");
+        System.out.print("""
+                Let me guess your age.
+                Enter remainders of dividing your age by 3, 5 and 7.
+                """);
 
         int remainder3 = in.nextInt();
         int remainder5 = in.nextInt();
@@ -40,12 +44,15 @@ class SimpleChatBot {
     }
 
     protected void testKnowledge() {
-        System.out.println("Let's test your programming knowledge.\n" +
-                "Why do we use methods?\n" +
-                "1. To repeat a statement multiple times.\n" +
-                "2. To decompose a program into several small subroutines.\n" +
-                "3. To determine the execution time of a program.\n" +
-                "4. To interrupt the execution of a program.");
+
+        System.out.print("""
+                Let's test your programming knowledge.
+                Why do we use methods?
+                1. To repeat a statement multiple times.
+                2. To decompose a program into several small subroutines.
+                3. To determine the execution time of a program.
+                4. To interrupt the execution of a program.
+                """);
 
         int answer = in.nextInt();
         while (answer != 2) {
