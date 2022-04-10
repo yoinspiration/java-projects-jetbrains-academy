@@ -35,7 +35,8 @@ class TicTacToe {
                 |       |
                 |       |
                 |       |
-                ---------""");
+                ---------
+                """);
 
         int turn = 0;
         while (true) {
