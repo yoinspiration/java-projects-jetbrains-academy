@@ -30,7 +30,7 @@ class TicTacToe {
 
     protected void start() {
 
-        System.out.println("""
+        System.out.print("""
                 ---------
                 |       |
                 |       |
