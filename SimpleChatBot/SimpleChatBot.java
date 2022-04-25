@@ -5,7 +5,7 @@ class SimpleChatBot {
     private String botName = "Lucy";
     private String birthYear = "2015";
 
-    protected void introduceMyself() {
+    protected void selfIntroduction() {
         System.out.printf("""
                 Hello! My name is %s.
                 I was created in %s.
@@ -38,7 +38,7 @@ class SimpleChatBot {
         System.out.println("Now I will prove to you that I can count to any number you want.");
         int number = in.nextInt();
 
-        for (int i = 0; i <= number; ++i) {
+        for (int i = 0; i <= number; i++) {
             System.out.println(i + "!");
         }
     }
@@ -54,10 +54,8 @@ class SimpleChatBot {
                 4. To interrupt the execution of a program.
                 """);
 
-        int answer = in.nextInt();
-        while (answer != 2) {
+        while (in.nextInt() != 2) {
             System.out.println("Please, try again.");
-            answer = in.nextInt();
         }
 
         System.out.println("Congratulations, have a nice day!");

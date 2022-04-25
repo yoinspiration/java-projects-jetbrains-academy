@@ -4,7 +4,7 @@ class Main {
 
         SimpleChatBot bot = new SimpleChatBot();
 
-        bot.introduceMyself();
+        bot.selfIntroduction();
         bot.askName();
         bot.guessAge();
         bot.countNumber();

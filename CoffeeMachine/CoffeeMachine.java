@@ -40,7 +40,21 @@ class CoffeeMachine {
 
     protected void selectCoffee() {
         System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
-        String choice = in.next();
+
+        String options[] = {"1", "2", "3", "back"};
+        int length = options.length;
+        String choice;
+
+        inputValidate:
+        do {
+            choice = in.next();
+            for (int i = 0; i < length; i++) {
+                if (choice.equals(options[i])) {
+                    break inputValidate;
+                }
+            }
+        } while (true);
+
         switch (choice) {
             case "1" -> buy(Coffee.ESPRESSO);
             case "2" -> buy(Coffee.LATTE);
@@ -63,7 +77,7 @@ class CoffeeMachine {
             milk -= coffee.milk;
             beans -= coffee.beans;
             cups--;
-            money += coffee.money;
+            money += coffee.price;
         }
     }
 
